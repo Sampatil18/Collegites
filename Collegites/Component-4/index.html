@@ -10,20 +10,23 @@
     font-family: Arial, Helvetica, sans-serif;
 }
         .course {
-            border: 2px solid #ccc;
+            border: 2px solid #0a0a0a;
             border-radius: 20px;
+            background-color: aqua;
             padding: 20px;
-         margin: 5px;
+            margin: 5px;
             width: 30%;
             height: 20%;
         }
 .container{
     display: flex;
+    background-color:rgb(216, 213, 213);
 }
 
         .button {
-    
-            border: black;
+            background-color: rgb(143, 143, 247);
+            margin: 4px;
+            border-radius: 10px;
             padding: 8px 16px;
             text-align: center;
             font-size: 16px;
@@ -32,28 +35,81 @@
 
         }
         .button:hover {
-            background-color: #a2b0c0;
+            background-color: #f19571;
         }
+
+        @media screen and (max-width: 480px) {
+
+.container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.container img {
+    width: 90%;
+}
+
+.my-class1 {
+    width: 70%;
+}
+
+}
+@media screen and (max-width: 767px) {
+            /* Mobile styles */
+            .course {
+                width: 70%;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            /* Tablet styles */
+            .course {
+                width: 60%;
+            }
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1279px) {
+            /* Laptop styles */
+            .course {
+                width: 30%;
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            /* Large Desktop styles */
+            .course {
+                width: 22%;
+            }
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <div class="course">
             <h2>NEET</h2>
-            <button>Class 11</button> <button>class 12</button> <button>Dropper</button>
-
+            <button class="button">Class 11</button> 
+            <button class="button">class 12</button> 
+            <button class="button">Dropper</button>
+            <br>
             Explore More
             <button class="button">-></button>
         </div>
     <div class="course">
         <h2>IIT JEE</h2>
-        <button>Class 11</button> <button>class 12</button> <button>Dropper</button>
+        <button class="button">Class 11</button> 
+        <button class="button">class 12</button> 
+        <button class="button">Dropper</button>
+        <br>
         Explore More
         <button class="button">-></button>
     </div>
     <div class="course">
         <h2>School Prteparation</h2>
-        <button>Class 11</button> <button>class 12</button> <button>Dropper</button>
+        <button class="button">Class 11</button> 
+        <button class="button">class 12</button> 
+        <button class="button">Dropper</button>
+        <br>
         Explore More
         <button class="button">-></button>
     </div>
@@ -61,19 +117,28 @@
 <div class="container">
     <div class="course">
         <h2>Govt Job</h2>
-        <button>Class 11</button> <button>class 12</button> <button>Dropper</button>
+        <button class="button">Class 11</button> 
+        <button class="button">class 12</button> 
+        < <button class="button">Dropper</button>
+        <br>
         Explore More
         <button class="button">-></button>
     </div>
     <div class="course">
         <h2>Defence</h2>
-        <button>Class 11</button> <button>class 12</button> <button>Dropper</button>
+        <button class="button">Class 11</button> 
+        <button class="button">class 12</button> 
+        <button class="button">Dropper</button>
+        <br>
         Explore More
         <button class="button">-></button>
     </div>
     <div class="course">
         <h2>CA </h2>
-        <button>Class 11</button> <button>class 12</button> <button>Dropper</button>
+        <button class="button">Class 11</button> 
+        <button class="button">class 12</button> 
+        <button class="button">Dropper</button>
+        <br>
         Explore More
         <button class="button">-></button>
     </div>
