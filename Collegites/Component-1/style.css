@@ -38,4 +38,67 @@ border-style: groove;
     font-size: 50px;
 }
 
+   /* Responsive styles
    
+Mobile (Smartphone) max-width: 480px.
+Low-Resolution Tablets and iPads max-width: 767px.
+Tablets iPads portrait mode max-width: 1024px.
+Desktops max-width: 1280px.
+Huge size (Larger screen) max-width: 1281px and greater.
+   
+   */
+@media screen and (max-width: 480px) {
+
+.container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.container img {
+    width: 90%;
+}
+
+.my-class1 {
+    width: 70%;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+/* mobile */
+ 
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container img {
+        width: 80%;
+    }
+
+    .my-class1 {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet styles */
+    .container img {
+        width: 70%;
+    }
+
+    .my-class1 {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    /* Laptop styles */
+    .container img {
+        width: 60%;
+    }
+
+    .my-class1 {
+        width: 50%;
+    }
+}
